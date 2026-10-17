@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdelhalem Emad — Senior Flutter Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Abdelhalem Emad, Senior Flutter Developer and UI/UX Designer from Cairo, Egypt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo" aria-label="Home">AE<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about"></a>
+      <a href="#skills" data-i18n="nav.skills"></a>
+      <a href="#experience" data-i18n="nav.exp"></a>
+      <a href="#work" data-i18n="nav.work"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
+    </nav>
+    <div class="nav-actions">
+      <button class="chip-btn" id="langBtn" aria-label="Switch language">ع</button>
+      <button class="chip-btn" id="themeBtn" aria-label="Toggle theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="chip-btn menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal"><span class="dot"></span><span data-i18n="hero.status"></span></p>
+        <h1 class="reveal" style="--d:.08s"><span data-i18n="hero.hi"></span><br><span class="name" data-i18n="hero.name"></span></h1>
+        <p class="role reveal" style="--d:.16s"><span class="mono">&gt;</span> <span id="roleText"></span><span class="caret"></span></p>
+        <p class="lead reveal" style="--d:.24s" data-i18n="hero.lead"></p>
+        <div class="cta reveal" style="--d:.32s">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1"></a>
+          <a href="#work" class="btn btn-ghost" data-i18n="hero.cta2"></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" style="--d:.2s">
+        <div class="photo-wrap tilt">
+          <img src="assets/me.jpg" alt="Abdelhalem Emad" width="600" height="900">
+          <div class="photo-ring" aria-hidden="true"></div>
+        </div>
+        <div class="float-card fc1"><b>4.5+</b><span data-i18n="stat.years"></span></div>
+        <div class="float-card fc2"><b>7+</b><span data-i18n="stat.apps"></span></div>
+        <div class="float-card fc3 mono">Flutter · Dart · Figma</div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat reveal"><b class="count" data-to="4.5" data-suffix="+">0</b><span data-i18n="stat.years"></span></div>
+      <div class="stat reveal" style="--d:.08s"><b class="count" data-to="7" data-suffix="+">0</b><span data-i18n="stat.apps"></span></div>
+      <div class="stat reveal" style="--d:.16s"><b class="count" data-to="10" data-suffix="+">0</b><span data-i18n="stat.workshops"></span></div>
+      <div class="stat reveal" style="--d:.24s"><b class="count" data-to="20" data-suffix="+">0</b><span data-i18n="stat.mentored"></span></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal"><span class="num mono">01</span><span data-i18n="nav.about"></span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+        </div>
+        <div class="about-cards">
+          <div class="card reveal" style="--d:.08s">
+            <h3 data-i18n="about.eduT"></h3>
+            <p data-i18n="about.edu"></p>
+            <p class="muted" data-i18n="about.grad"></p>
+          </div>
+          <div class="card reveal" style="--d:.16s">
+            <h3 data-i18n="about.langT"></h3>
+            <p data-i18n="about.lang"></p>
+          </div>
+          <div class="card reveal" style="--d:.24s">
+            <h3 data-i18n="about.locT"></h3>
+            <p data-i18n="about.loc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal"><span class="num mono">02</span><span data-i18n="nav.skills"></span></h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section-title reveal"><span class="num mono">03</span><span data-i18n="nav.exp"></span></h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <h2 class="section-title reveal"><span class="num mono">04</span><span data-i18n="nav.work"></span></h2>
+      <p class="section-sub reveal" data-i18n="work.sub"></p>
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title reveal"><span class="num mono">05</span><span data-i18n="contact.title"></span></h2>
+      <div class="contact-grid">
+        <div class="contact-intro reveal">
+          <p class="big" data-i18n="contact.big"></p>
+          <p class="muted" data-i18n="contact.sub"></p>
+          <ul class="links">
+            <li><a href="https://wa.me/201069991770" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></span>+20 106 999 1770</a></li>
+            <li><a href="mailto:abdelhalem.emad.eg@gmail.com"><span class="ico"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></span>abdelhalem.emad.eg@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/abd-elhalem-emad-005306224/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2ZM8 19H5V9.5h3V19ZM6.5 8.2a1.8 1.8 0 1 1 0-3.5 1.8 1.8 0 0 1 0 3.5ZM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S12.8 13 12.8 14.3V19h-3V9.5h2.8v1.3h.1a3.1 3.1 0 0 1 2.8-1.5c3 0 3.5 2 3.5 4.5V19Z"/></svg></span>LinkedIn</a></li>
+            <li><a href="https://github.com/abdelhaliem" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></span>GitHub</a></li>
+          </ul>
+        </div>
+
+        <form class="form card reveal" id="leadForm" novalidate style="--d:.1s">
+          <div class="row">
+            <label><span data-i18n="f.name"></span>
+              <input name="name" required maxlength="80" autocomplete="name">
+            </label>
+            <label><span data-i18n="f.company"></span>
+              <input name="company" maxlength="80" autocomplete="organization">
+            </label>
+          </div>
+
+          <fieldset>
+            <legend data-i18n="f.type"></legend>
+            <div class="pills" id="typePills"></div>
+          </fieldset>
+
+          <div class="row">
+            <label><span data-i18n="f.budget"></span>
+              <select name="budget" id="budgetSel"></select>
+            </label>
+            <label><span data-i18n="f.timeline"></span>
+              <select name="timeline" id="timelineSel"></select>
+            </label>
+          </div>
+
+          <label><span data-i18n="f.details"></span>
+            <textarea name="details" required rows="5" maxlength="1500" data-i18n-ph="f.detailsPh"></textarea>
+          </label>
+
+          <fieldset>
+            <legend data-i18n="f.via"></legend>
+            <div class="via">
+              <label class="via-opt"><input type="radio" name="via" value="whatsapp" checked>
+                <span><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>WhatsApp</span>
+              </label>
+              <label class="via-opt"><input type="radio" name="via" value="email">
+                <span><svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg><b data-i18n="f.email"></b></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-primary btn-block" type="submit"><span data-i18n="f.send"></span> <span class="arrow">→</span></button>
+          <p class="muted small" data-i18n="f.note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span data-i18n="hero.name"></span></p>
+    <a href="#top" class="mono" data-i18n="toTop"></a>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lbTitle">
+    <div class="lb-head">
+      <strong id="lbTitle"></strong>
+      <span class="mono muted" id="lbCount"></span>
+      <button class="chip-btn" id="lbClose" aria-label="Close">✕</button>
+    </div>
+    <div class="lb-body">
+      <button class="chip-btn lb-nav" id="lbPrev" aria-label="Previous">‹</button>
+      <img id="lbImg" alt="">
+      <button class="chip-btn lb-nav" id="lbNext" aria-label="Next">›</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
